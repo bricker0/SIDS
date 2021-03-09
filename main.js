@@ -18,7 +18,9 @@ var svg = d3.select("#mapSVG"),
 var options = [
 	{name: "Interrupted Goode Homolosine (Ocean)", projection: d3.geoInterruptedHomolosine().lobes(lobes_sea).scale(150)},
 	{name: "Eckert IV", projection: d3.geoEckert4().scale(175)},
-	{name: "Mollweide", projection: d3.geoMollweide().scale(165)}
+	{name: "Mollweide", projection: d3.geoMollweide().scale(165)},
+	{name: "Mercator", projection: d3.geoMercator().scale(490 / 2 / Math.PI)
+
 	];
 
 /**
